@@ -1,18 +1,23 @@
 extends Node
 
 enum Rule {
-	NOTHING_MOVES,
 	NOTHING_BURNS,
 	NOTHING_DROWNS,
 }
 
 const RULES_DATA = {
-	Rule.NOTHING_MOVES: {
-		"word": "moves",
+	Rule.NOTHING_BURNS: {
+		"word": "burns",
+	},
+	Rule.NOTHING_DROWNS: {
+		"word": "drowns",
 	},
 }
 
-var rules_available = []
+var rules_available = [
+	Rule.NOTHING_BURNS,
+	Rule.NOTHING_DROWNS,
+]
 var rules_active = []
 
 func toggle_rule(rule):
@@ -28,10 +33,6 @@ func activate_rule(rule):
 func deactivate_rule(rule):
 	if rule in rules_active:
 		rules_active.remove(rules_active.find(rule))
-
-func set_rule(index, rule):
-	if not rule in rules_active:
-		rules_active[index] = rule
 
 func kill_player():
 	print('player is dead')
