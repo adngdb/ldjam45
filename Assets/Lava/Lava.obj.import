@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Lava.obj-cb98ec2c77d60c483709f891c4138ced.mesh"
+
+[deps]
+
+files=[ "res://.import/Lava.obj-cb98ec2c77d60c483709f891c4138ced.mesh" ]
+
+source_file="res://Assets/Lava/Lava.obj"
+dest_files=[ "res://.import/Lava.obj-cb98ec2c77d60c483709f891c4138ced.mesh", "res://.import/Lava.obj-cb98ec2c77d60c483709f891c4138ced.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
