@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Level00.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/ControlDragDropHorizontal.tscn" type="PackedScene" id=3]
 
 [node name="Main" type="Spatial"]
 
@@ -15,3 +16,5 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.86656, 0 )
 transform = Transform( 1, 0, 0, 0, 0.917082, 0.3987, 0, -0.3987, 0.917082, 0, 3.37084, 10 )
 
 [node name="Level00" parent="." instance=ExtResource( 2 )]
+
+[node name="ControlDragDropHorizontal" parent="." instance=ExtResource( 3 )]
