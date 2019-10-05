@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="LD45"
 run/main_scene="res://Scenes/Main.tscn"
 
+[autoload]
+
+State="*res://Scripts/State.gd"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
