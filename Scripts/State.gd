@@ -14,27 +14,33 @@ const RULES_DATA = {
 	},
 }
 
+var ruleSlots = 2
+
 var rules_available = [
 	Rule.NOTHING_BURNS,
 	Rule.NOTHING_DROWNS,
 ]
 var rules_active = []
 
-func toggle_rule(rule):
-	if rule in rules_active:
-		self.deactivate_rule(rule)
-	else:
-		self.activate_rule(rule)
+# Proxy to hold content of Nothing... rules.
+# Transformed into rules_active list after every change.
+var rules_holders = {}
 
-func activate_rule(rule):
-	if not rule in rules_active:
+func reset_state():
+	rules_active = []
+	rules_holders = {}
+
+func generate_rules_list():
+	rules_active = []
+	for rule in rules_holders.values():
+		print(rule)
 		rules_active.append(rule)
 
-func deactivate_rule(rule):
-	if rule in rules_active:
-		rules_active.remove(rules_active.find(rule))
+func set_rule(index, rule):
+	rules_holders[index] = rule
+	generate_rules_list()
 
 func kill_player():
 	print('player is dead')
-	rules_active = []
+	reset_state()
 	get_tree().reload_current_scene()

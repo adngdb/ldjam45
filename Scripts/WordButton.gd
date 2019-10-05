@@ -1,15 +1,12 @@
 extends Button
 
-class_name WordDragable
-
 var ruleIndex = null
 var wordName: String
 
-func _init(rule, word):
-	ruleIndex = rule
-	wordName = word
-
 func _ready():
+	var parent = get_node('..')
+	ruleIndex = parent.ruleIndex
+	wordName = parent.wordName
 	set_text(wordName)
 
 func get_drag_data(_pos):
