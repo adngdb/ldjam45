@@ -2,8 +2,14 @@ extends Node
 
 enum Rule {
 	NOTHING_MOVES,
-	NOTHING_BURNS
-	NOTHING_DROWNS
+	NOTHING_BURNS,
+	NOTHING_DROWNS,
+}
+
+const RULES_DATA = {
+	Rule.NOTHING_MOVES: {
+		"word": "moves",
+	},
 }
 
 var rules_available = []
