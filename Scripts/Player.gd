@@ -1,7 +1,6 @@
 extends RigidBody
 
-export var force: float
+export var velocity: float
 
-func _physics_process(delta):
-	if not State.rules_active.has(State.NOTHING_MOVES):
-		add_central_force(Vector3(force, 0, 0))
+func _ready():
+	linear_velocity = Vector3(velocity, 0, 0)
