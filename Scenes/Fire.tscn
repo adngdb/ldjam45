@@ -15,7 +15,6 @@ albedo_color = Color( 1, 0, 0, 1 )
 [node name="Fire" type="Area"]
 collision_layer = 2
 script = ExtResource( 1 )
-rule = 1
 
 [node name="TriggerZone" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
