@@ -10,12 +10,12 @@ extents = Vector3( 1, 1.68539, 1 )
 [sub_resource type="CubeMesh" id=3]
 
 [sub_resource type="SpatialMaterial" id=4]
-albedo_color = Color( 1, 0, 0, 1 )
+albedo_color = Color( 0, 0.27451, 1, 1 )
 
-[node name="Fire" type="Area"]
+[node name="Water" type="Area"]
 collision_layer = 2
 script = ExtResource( 1 )
-rule = 1
+rule = 2
 
 [node name="TriggerZone" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )

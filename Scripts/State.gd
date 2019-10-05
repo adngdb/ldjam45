@@ -1,11 +1,12 @@
 extends Node
 
-enum {
+enum Rule {
 	NOTHING_MOVES,
 	NOTHING_BURNS
+	NOTHING_DROWNS
 }
 
-var rules_available = [NOTHING_MOVES]
+var rules_available = []
 var rules_active = []
 
 func toggle_rule(rule):
@@ -28,4 +29,5 @@ func set_rule(index, rule):
 
 func kill_player():
 	print('player is dead')
+	rules_active = []
 	get_tree().reload_current_scene()
