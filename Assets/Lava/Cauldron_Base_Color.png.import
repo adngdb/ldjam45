@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Cauldron_Normal_DirectX.png-4ff9c0ede298087014a83eaced36b9b8.s3tc.stex"
-path.etc="res://.import/Cauldron_Normal_DirectX.png-4ff9c0ede298087014a83eaced36b9b8.etc.stex"
+path.s3tc="res://.import/Cauldron_Base_Color.png-e6ac0bde616163d4495a9cf674d39081.s3tc.stex"
+path.etc="res://.import/Cauldron_Base_Color.png-e6ac0bde616163d4495a9cf674d39081.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Ground/Cauldron_Normal_DirectX.png"
-dest_files=[ "res://.import/Cauldron_Normal_DirectX.png-4ff9c0ede298087014a83eaced36b9b8.s3tc.stex", "res://.import/Cauldron_Normal_DirectX.png-4ff9c0ede298087014a83eaced36b9b8.etc.stex" ]
+source_file="res://Assets/Lava/Cauldron_Base_Color.png"
+dest_files=[ "res://.import/Cauldron_Base_Color.png-e6ac0bde616163d4495a9cf674d39081.s3tc.stex", "res://.import/Cauldron_Base_Color.png-e6ac0bde616163d4495a9cf674d39081.etc.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/mode=2
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=1
+compress/normal_map=0
 flags/repeat=true
 flags/filter=true
 flags/mipmaps=true

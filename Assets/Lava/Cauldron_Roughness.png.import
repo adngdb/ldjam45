@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Cauldron_Roughness.png-8f5901e715849207b928640c5169692e.s3tc.stex"
-path.etc="res://.import/Cauldron_Roughness.png-8f5901e715849207b928640c5169692e.etc.stex"
+path.s3tc="res://.import/Cauldron_Roughness.png-0143fff5cfcbe2a031a071a2b51f2bf1.s3tc.stex"
+path.etc="res://.import/Cauldron_Roughness.png-0143fff5cfcbe2a031a071a2b51f2bf1.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Ground/Cauldron_Roughness.png"
-dest_files=[ "res://.import/Cauldron_Roughness.png-8f5901e715849207b928640c5169692e.s3tc.stex", "res://.import/Cauldron_Roughness.png-8f5901e715849207b928640c5169692e.etc.stex" ]
+source_file="res://Assets/Lava/Cauldron_Roughness.png"
+dest_files=[ "res://.import/Cauldron_Roughness.png-0143fff5cfcbe2a031a071a2b51f2bf1.s3tc.stex", "res://.import/Cauldron_Roughness.png-0143fff5cfcbe2a031a071a2b51f2bf1.etc.stex" ]
 
 [params]
 

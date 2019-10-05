@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Cauldron_Base_Color.png-35d1e63a4ae2b0278c32b7cc3e46286b.s3tc.stex"
-path.etc="res://.import/Cauldron_Base_Color.png-35d1e63a4ae2b0278c32b7cc3e46286b.etc.stex"
+path.s3tc="res://.import/Cauldron_Metallic.png-825ca5b3c3600a23aeddc3de2046aafa.s3tc.stex"
+path.etc="res://.import/Cauldron_Metallic.png-825ca5b3c3600a23aeddc3de2046aafa.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Ground/Cauldron_Base_Color.png"
-dest_files=[ "res://.import/Cauldron_Base_Color.png-35d1e63a4ae2b0278c32b7cc3e46286b.s3tc.stex", "res://.import/Cauldron_Base_Color.png-35d1e63a4ae2b0278c32b7cc3e46286b.etc.stex" ]
+source_file="res://Assets/Lava/Cauldron_Metallic.png"
+dest_files=[ "res://.import/Cauldron_Metallic.png-825ca5b3c3600a23aeddc3de2046aafa.s3tc.stex", "res://.import/Cauldron_Metallic.png-825ca5b3c3600a23aeddc3de2046aafa.etc.stex" ]
 
 [params]
 
