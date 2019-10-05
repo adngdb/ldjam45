@@ -2,6 +2,7 @@ extends Node
 
 enum {
 	NOTHING_MOVES,
+	NOTHING_BURNS
 }
 
 var rules_available = [NOTHING_MOVES]

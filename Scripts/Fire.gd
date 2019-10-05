@@ -2,4 +2,6 @@ extends Area
 
 func _on_Fire_body_entered(body):
 	print(body)
-	State.kill_player()
+	
+	if not State.NOTHING_BURNS in State.rules_active:
+		State.kill_player()
