@@ -3,6 +3,7 @@ extends Node
 enum Rule {
 	NOTHING_BURNS,
 	NOTHING_DROWNS,
+	NOTHING_STINGS,
 }
 
 const RULES_DATA = {
@@ -12,6 +13,9 @@ const RULES_DATA = {
 	Rule.NOTHING_DROWNS: {
 		"word": "drowns",
 	},
+	Rule.NOTHING_STINGS: {
+		"word": "stings",
+	},
 }
 
 var ruleSlots = 1
@@ -19,6 +23,7 @@ var ruleSlots = 1
 var rules_available = [
 	Rule.NOTHING_BURNS,
 	Rule.NOTHING_DROWNS,
+	Rule.NOTHING_STINGS,
 ]
 var rules_active = []
 
