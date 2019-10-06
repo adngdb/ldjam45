@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Pumkin_Fire_BaseColor.png-3cd8881f85c7e753137a80be2187768b.s3tc.stex"
-path.etc="res://.import/Pumkin_Fire_BaseColor.png-3cd8881f85c7e753137a80be2187768b.etc.stex"
+path.s3tc="res://.import/Fire_Alpha.png-9975923daa107c0e073809b56b44e9ca.s3tc.stex"
+path.etc="res://.import/Fire_Alpha.png-9975923daa107c0e073809b56b44e9ca.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Fire/Pumkin_Fire_BaseColor.png"
-dest_files=[ "res://.import/Pumkin_Fire_BaseColor.png-3cd8881f85c7e753137a80be2187768b.s3tc.stex", "res://.import/Pumkin_Fire_BaseColor.png-3cd8881f85c7e753137a80be2187768b.etc.stex" ]
+source_file="res://Assets/Fire/Fire_Alpha.png"
+dest_files=[ "res://.import/Fire_Alpha.png-9975923daa107c0e073809b56b44e9ca.s3tc.stex", "res://.import/Fire_Alpha.png-9975923daa107c0e073809b56b44e9ca.etc.stex" ]
 
 [params]
 

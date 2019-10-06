@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Pumkin_Fire_Roughness.png-4b2ea3d8ce0ed80bf6e1912f9f1687c7.s3tc.stex"
-path.etc="res://.import/Pumkin_Fire_Roughness.png-4b2ea3d8ce0ed80bf6e1912f9f1687c7.etc.stex"
+path.s3tc="res://.import/Pumpkin_Fire_Roughness.png-fa62a05faad03b2dca2d493d28d4e638.s3tc.stex"
+path.etc="res://.import/Pumpkin_Fire_Roughness.png-fa62a05faad03b2dca2d493d28d4e638.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Fire/Pumkin_Fire_Roughness.png"
-dest_files=[ "res://.import/Pumkin_Fire_Roughness.png-4b2ea3d8ce0ed80bf6e1912f9f1687c7.s3tc.stex", "res://.import/Pumkin_Fire_Roughness.png-4b2ea3d8ce0ed80bf6e1912f9f1687c7.etc.stex" ]
+source_file="res://Assets/Fire/Pumpkin_Fire_Roughness.png"
+dest_files=[ "res://.import/Pumpkin_Fire_Roughness.png-fa62a05faad03b2dca2d493d28d4e638.s3tc.stex", "res://.import/Pumpkin_Fire_Roughness.png-fa62a05faad03b2dca2d493d28d4e638.etc.stex" ]
 
 [params]
 
