@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Assets/Lava/Lava.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Lava/Cauldron_Base_Color.png" type="Texture" id=2]
@@ -10,7 +10,8 @@
 [ext_resource path="res://Assets/Ground/Ground_Roughness.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Lava/Lava_Normal.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Lava/Lava_BaseColor.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Skybox.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=12]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -98,6 +99,7 @@ void fragment() {
 
 // Output:0
 	ALBEDO = n_out4p0;
+	EMISSION = n_out4p0;
 	NORMALMAP = n_out17p0;
 
 }
@@ -107,11 +109,12 @@ void light() {
 
 }
 "
-graph_offset = Vector2( -602.456, -351.941 )
+graph_offset = Vector2( -301, 31.125 )
+nodes/fragment/0/position = Vector2( 580, 180 )
 nodes/fragment/2/node = SubResource( 8 )
 nodes/fragment/2/position = Vector2( -1180, 200 )
 nodes/fragment/4/node = SubResource( 9 )
-nodes/fragment/4/position = Vector2( -120, 80 )
+nodes/fragment/4/position = Vector2( -140, -40 )
 nodes/fragment/7/node = SubResource( 10 )
 nodes/fragment/7/position = Vector2( -1120, -500 )
 nodes/fragment/11/node = SubResource( 3 )
@@ -124,7 +127,7 @@ nodes/fragment/16/node = SubResource( 6 )
 nodes/fragment/16/position = Vector2( -620, 320 )
 nodes/fragment/17/node = SubResource( 7 )
 nodes/fragment/17/position = Vector2( -140, 560 )
-nodes/fragment/connections = PoolIntArray( 4, 0, 0, 0, 7, 0, 15, 0, 11, 0, 15, 1, 15, 0, 16, 0, 2, 0, 16, 1, 16, 0, 4, 0, 16, 0, 17, 0, 17, 0, 0, 8 )
+nodes/fragment/connections = PoolIntArray( 4, 0, 0, 0, 7, 0, 15, 0, 11, 0, 15, 1, 15, 0, 16, 0, 2, 0, 16, 1, 16, 0, 4, 0, 16, 0, 17, 0, 17, 0, 0, 8, 4, 0, 0, 5 )
 
 [sub_resource type="ShaderMaterial" id=12]
 shader = SubResource( 11 )
@@ -138,4 +141,7 @@ material/0 = SubResource( 1 )
 material/1 = SubResource( 2 )
 material/2 = SubResource( 12 )
 
-[node name="Ground" parent="." instance=ExtResource( 11 )]
+[node name="Skybox" parent="Lava" instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.356, 1.11585, -1.34778 )
+
+[node name="Ground" parent="." instance=ExtResource( 12 )]
