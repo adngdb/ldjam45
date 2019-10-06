@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Assets/Lava/Lava.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Lava/Cauldron_Base_Color.png" type="Texture" id=2]
@@ -10,8 +10,7 @@
 [ext_resource path="res://Assets/Ground/Ground_Roughness.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Lava/Lava_Normal.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Lava/Lava_BaseColor.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/Skybox.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=11]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -141,7 +140,4 @@ material/0 = SubResource( 1 )
 material/1 = SubResource( 2 )
 material/2 = SubResource( 12 )
 
-[node name="Skybox" parent="Lava" instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.356, 1.11585, -1.34778 )
-
-[node name="Ground" parent="." instance=ExtResource( 12 )]
+[node name="Ground" parent="." instance=ExtResource( 11 )]
