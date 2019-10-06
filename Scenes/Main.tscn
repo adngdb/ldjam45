@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player2D.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/ControlDragDropHorizontal.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Skybox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=5]
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 1 )
@@ -21,3 +22,5 @@ transform = Transform( 1, 0, 0, 0, 0.948341, 0.317254, 0, -0.317254, 0.948341, 7
 [node name="ControlDragDropHorizontal" parent="." instance=ExtResource( 3 )]
 
 [node name="Skybox" parent="." instance=ExtResource( 4 )]
+
+[node name="Spatial" parent="." instance=ExtResource( 5 )]

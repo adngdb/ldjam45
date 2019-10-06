@@ -102,6 +102,14 @@ collision_layer = 4
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120, 0, 0 )
 collision_layer = 4
 
+[node name="Ground33" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 124, 0, 0 )
+collision_layer = 4
+
+[node name="Ground34" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 128, 0, 0 )
+collision_layer = 4
+
 [node name="Ground28" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0 )
 collision_layer = 4

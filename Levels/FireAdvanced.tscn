@@ -77,6 +77,10 @@ collision_layer = 4
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 0 )
 collision_layer = 4
 
+[node name="Ground23" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 76, 0, 0 )
+collision_layer = 4
+
 [node name="Fire_Real" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0 )
 
