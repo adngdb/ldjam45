@@ -73,6 +73,7 @@ func next_level():
 		print('you win!')
 	else:
 		current_level += 1
+		reset_state()
 		get_tree().reload_current_scene()
 
 
