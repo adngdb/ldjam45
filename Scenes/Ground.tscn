@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Ground/Ground_Tile.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Ground/Ground_BaseColor.png" type="Texture" id=2]
@@ -19,8 +19,14 @@ ao_texture = ExtResource( 3 )
 ao_on_uv2 = false
 ao_texture_channel = 0
 
-[node name="Ground" type="Spatial"]
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 2.2, 1.5, 1 )
+
+[node name="Ground" type="StaticBody"]
 
 [node name="Ground_Tile" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 2 )
