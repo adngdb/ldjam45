@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Level00.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/ControlDragDropHorizontal.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Skybox.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Spatial"]
 
@@ -13,8 +14,10 @@ transform = Transform( -0.778903, 0.422419, 0.463544, 0.627071, 0.51328, 0.58594
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
 
 [node name="Camera" type="Camera" parent="Player"]
-transform = Transform( 1, 0, 0, 0, 0.782642, 0.622473, 0, -0.622473, 0.782642, 0, 3.37084, 10 )
+transform = Transform( 1, 0, 0, 0, 0.948341, 0.317254, 0, -0.317254, 0.948341, 0, 0.37084, 11 )
 
 [node name="Level00" parent="." instance=ExtResource( 2 )]
 
 [node name="ControlDragDropHorizontal" parent="." instance=ExtResource( 3 )]
+
+[node name="Skybox" parent="." instance=ExtResource( 4 )]
