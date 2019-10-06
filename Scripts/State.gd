@@ -14,7 +14,7 @@ const RULES_DATA = {
 	},
 }
 
-var ruleSlots = 2
+var ruleSlots = 1
 
 var rules_available = [
 	Rule.NOTHING_BURNS,
