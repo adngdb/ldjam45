@@ -1,9 +1,22 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/Ground/Ground_Tile_Hole.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Ground/Ground_BaseColor.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Ground/Ground_AO.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Ground/Ground_Roughness.png" type="Texture" id=4]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+roughness = 0.42
+roughness_texture = ExtResource( 4 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 3 )
+ao_on_uv2 = false
+ao_texture_channel = 0
 
 [node name="Ground_Hole" type="Spatial"]
 
 [node name="Ground_Tile_Hole" type="MeshInstance" parent="."]
 mesh = ExtResource( 1 )
-material/0 = null
+material/0 = SubResource( 1 )
