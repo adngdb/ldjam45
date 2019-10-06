@@ -121,6 +121,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 0, 0 )
 
 [node name="EndLevel" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 3, 0 )
+rewards_word = 2
 
 [node name="Water_Real" parent="." instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 0 )

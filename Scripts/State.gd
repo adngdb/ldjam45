@@ -5,6 +5,7 @@ extends Node
 # -------------------------------------------------
 
 enum Rule {
+	NONE = -1,
 	NOTHING_BURNS,
 	NOTHING_DROWNS,
 	NOTHING_STINGS,
@@ -22,18 +23,16 @@ const RULES_DATA = {
 	},
 }
 
-var ruleSlots = 1
+var rule_slots = 1
 
-var rules_available = [
-	Rule.NOTHING_BURNS,
-	Rule.NOTHING_DROWNS,
-	Rule.NOTHING_STINGS,
-]
+var rules_available = []
 var rules_active = []
 
 # Proxy to hold content of Nothing... rules.
 # Transformed into rules_active list after every change.
 var rules_holders = {}
+
+var new_rule = null;
 
 func generate_rules_list():
 	rules_active = []
@@ -61,6 +60,7 @@ func kill_player():
 # -------------------------------------------------
 
 const levels = [
+	'res://Levels/Empty.tscn',
 	'res://Levels/FireSimple.tscn',
 	'res://Levels/FireAdvanced.tscn',
 	'res://Levels/FireWaterSimple.tscn',
@@ -78,7 +78,11 @@ func next_level():
 	else:
 		current_level += 1
 		reset_state()
-		get_tree().reload_current_scene()
+		
+		if new_rule != null:
+			get_tree().change_scene('res://Screens/WordFound.tscn')
+		else:
+			get_tree().reload_current_scene()
 
 
 # -------------------------------------------------

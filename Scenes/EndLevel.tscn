@@ -12,6 +12,7 @@
 [node name="EndLevel" type="Area"]
 collision_layer = 8
 script = ExtResource( 1 )
+rewards_word = -1
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 1 )

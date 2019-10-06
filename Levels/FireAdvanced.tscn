@@ -98,3 +98,4 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 0 )
 
 [node name="EndLevel" parent="." instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, 3, 0 )
+rewards_word = 1

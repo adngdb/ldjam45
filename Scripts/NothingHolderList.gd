@@ -3,7 +3,7 @@ extends HBoxContainer
 var nothingHolder = preload("res://Scenes/NothingHolder.tscn")
 
 func _ready():
-	for i in range(State.ruleSlots):
+	for i in range(State.rule_slots):
 		print('add holder %d' % i)
 		var holder = nothingHolder.instance()
 		add_child(holder)
