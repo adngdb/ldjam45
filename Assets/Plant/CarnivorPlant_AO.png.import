@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Phorn_Roughness.png-1ad352342fe1effa972947285664c6d5.s3tc.stex"
-path.etc="res://.import/Phorn_Roughness.png-1ad352342fe1effa972947285664c6d5.etc.stex"
+path.s3tc="res://.import/CarnivorPlant_AO.png-d6d0238195cc2824c0f842d205159c5e.s3tc.stex"
+path.etc="res://.import/CarnivorPlant_AO.png-d6d0238195cc2824c0f842d205159c5e.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Phorn/Phorn_Roughness.png"
-dest_files=[ "res://.import/Phorn_Roughness.png-1ad352342fe1effa972947285664c6d5.s3tc.stex", "res://.import/Phorn_Roughness.png-1ad352342fe1effa972947285664c6d5.etc.stex" ]
+source_file="res://Assets/Plant/CarnivorPlant_AO.png"
+dest_files=[ "res://.import/CarnivorPlant_AO.png-d6d0238195cc2824c0f842d205159c5e.s3tc.stex", "res://.import/CarnivorPlant_AO.png-d6d0238195cc2824c0f842d205159c5e.etc.stex" ]
 
 [params]
 

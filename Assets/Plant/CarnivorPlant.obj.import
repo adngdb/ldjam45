@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/CarnivorPlant.obj-85aa209e40b8f788435a7e68aea14993.mesh"
+
+[deps]
+
+files=[ "res://.import/CarnivorPlant.obj-85aa209e40b8f788435a7e68aea14993.mesh" ]
+
+source_file="res://Assets/Plant/CarnivorPlant.obj"
+dest_files=[ "res://.import/CarnivorPlant.obj-85aa209e40b8f788435a7e68aea14993.mesh", "res://.import/CarnivorPlant.obj-85aa209e40b8f788435a7e68aea14993.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

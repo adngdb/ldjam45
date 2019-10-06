@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Phorn_Mixed_AO.png-733ec2b584a1f2b4bf92233b108c48cf.s3tc.stex"
-path.etc="res://.import/Phorn_Mixed_AO.png-733ec2b584a1f2b4bf92233b108c48cf.etc.stex"
+path.s3tc="res://.import/Vines_Mixed_AO.png-6fcc58034e1054c36913bcfd76709ea2.s3tc.stex"
+path.etc="res://.import/Vines_Mixed_AO.png-6fcc58034e1054c36913bcfd76709ea2.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Phorn/Phorn_Mixed_AO.png"
-dest_files=[ "res://.import/Phorn_Mixed_AO.png-733ec2b584a1f2b4bf92233b108c48cf.s3tc.stex", "res://.import/Phorn_Mixed_AO.png-733ec2b584a1f2b4bf92233b108c48cf.etc.stex" ]
+source_file="res://Assets/Plant/Vines_Mixed_AO.png"
+dest_files=[ "res://.import/Vines_Mixed_AO.png-6fcc58034e1054c36913bcfd76709ea2.s3tc.stex", "res://.import/Vines_Mixed_AO.png-6fcc58034e1054c36913bcfd76709ea2.etc.stex" ]
 
 [params]
 

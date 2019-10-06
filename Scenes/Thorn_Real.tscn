@@ -1,13 +1,18 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/Phorn/Phorn.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Assets/Phorn/Phorn_Base_Color.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Phorn/Phorn_Roughness.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Thorn/Phorn.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Thorn/Thorn_Base_Color.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Thorn/Phorn_Mixed_AO.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=4]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
-roughness_texture = ExtResource( 3 )
+roughness = 0.4
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 3 )
+ao_on_uv2 = false
+ao_texture_channel = 0
 
 [node name="Thorn" type="Spatial"]
 

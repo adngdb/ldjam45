@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Vines.obj-f88648d9b514a74618f02988f104ecad.mesh"
+
+[deps]
+
+files=[ "res://.import/Vines.obj-f88648d9b514a74618f02988f104ecad.mesh" ]
+
+source_file="res://Assets/Plant/Vines.obj"
+dest_files=[ "res://.import/Vines.obj-f88648d9b514a74618f02988f104ecad.mesh", "res://.import/Vines.obj-f88648d9b514a74618f02988f104ecad.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

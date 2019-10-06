@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/Phorn_Base_Color.png-510ac609ec0a176ad2b2c7f0f5d92f60.s3tc.stex"
-path.etc="res://.import/Phorn_Base_Color.png-510ac609ec0a176ad2b2c7f0f5d92f60.etc.stex"
+path.s3tc="res://.import/Vines_Roughness.png-dad6a72b72ff486b05956215773f3a5c.s3tc.stex"
+path.etc="res://.import/Vines_Roughness.png-dad6a72b72ff486b05956215773f3a5c.etc.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Phorn/Phorn_Base_Color.png"
-dest_files=[ "res://.import/Phorn_Base_Color.png-510ac609ec0a176ad2b2c7f0f5d92f60.s3tc.stex", "res://.import/Phorn_Base_Color.png-510ac609ec0a176ad2b2c7f0f5d92f60.etc.stex" ]
+source_file="res://Assets/Plant/Vines_Roughness.png"
+dest_files=[ "res://.import/Vines_Roughness.png-dad6a72b72ff486b05956215773f3a5c.s3tc.stex", "res://.import/Vines_Roughness.png-dad6a72b72ff486b05956215773f3a5c.etc.stex" ]
 
 [params]
 

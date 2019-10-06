@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Phorn.obj-58101c212bc97636c1f1aec6326742d1.mesh"
+
+[deps]
+
+files=[ "res://.import/Phorn.obj-58101c212bc97636c1f1aec6326742d1.mesh" ]
+
+source_file="res://Assets/Thorn/Phorn.obj"
+dest_files=[ "res://.import/Phorn.obj-58101c212bc97636c1f1aec6326742d1.mesh", "res://.import/Phorn.obj-58101c212bc97636c1f1aec6326742d1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
