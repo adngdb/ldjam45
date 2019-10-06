@@ -61,7 +61,11 @@ func kill_player():
 # -------------------------------------------------
 
 const levels = [
-	'res://Levels/TestAdrian.tscn',
+	'res://Levels/FireSimple.tscn',
+	'res://Levels/FireAdvanced.tscn',
+	'res://Levels/FireWaterSimple.tscn',
+	'res://Levels/FireWaterAdvanced.tscn',
+	'res://Levels/FireWaterExpert.tscn',
 	'res://Levels/LevelHard.tscn',
 ]
 
