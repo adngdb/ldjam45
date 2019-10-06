@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Fire/Fire_Alpha.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Book/Books_Book_BaseColor.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Book/Books.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+flags_unshaded = true
+flags_albedo_tex_force_srgb = true
+vertex_color_use_as_albedo = true
+params_blend_mode = 1
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=2]
+
+[sub_resource type="Curve" id=3]
+_data = [ Vector2( 0, 0.0282665 ), 0.0, 0.0, 0, 0, Vector2( 0.544174, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0.0165563, 0.284768, 0.738411, 1 )
+colors = PoolColorArray( 0.617188, 1, 0, 0, 0.00803588, 0.823352, 0.326519, 1, 0, 0.109375, 1, 1, 0.148438, 0, 1, 0 )
+
+[sub_resource type="SpatialMaterial" id=5]
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource( 2 )
+
+[node name="GetWord" type="Spatial"]
+
+[node name="FlameBlue" type="CPUParticles" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 0, 0 )
+material_override = SubResource( 1 )
+amount = 10
+lifetime = 0.5
+draw_order = 1
+mesh = SubResource( 2 )
+emission_shape = 1
+emission_sphere_radius = 0.1
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+angular_velocity = 10.0
+angular_velocity_random = 1.0
+linear_accel = 1.0
+scale_amount = 0.3
+scale_amount_random = 1.0
+scale_amount_curve = SubResource( 3 )
+color_ramp = SubResource( 4 )
+
+[node name="Books2" type="CPUParticles" parent="."]
+transform = Transform( 0.4216, -0.624682, 0.657286, -0.671379, 0.272185, 0.689323, -0.609511, -0.731907, -0.304645, 0.0932626, 0.739144, 0.0491925 )
+material_override = SubResource( 5 )
+amount = 1
+lifetime = 50.0
+mesh = ExtResource( 3 )
+flag_rotate_y = true
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 0.01
+angle = 2.0
+scale_amount = 1.5
