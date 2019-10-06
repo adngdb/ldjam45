@@ -35,10 +35,6 @@ var rules_active = []
 # Transformed into rules_active list after every change.
 var rules_holders = {}
 
-func reset_state():
-	rules_active = []
-	rules_holders = {}
-
 func generate_rules_list():
 	rules_active = []
 	for rule in rules_holders.values():
@@ -59,6 +55,7 @@ func kill_player():
 	reset_state()
 	get_tree().reload_current_scene()
 
+
 # -------------------------------------------------
 # Levels state and logic
 # -------------------------------------------------
@@ -67,3 +64,22 @@ const levels = [
 	'res://Levels/TestAdrian.tscn',
 	'res://Levels/LevelHard.tscn',
 ]
+
+var current_level = 0
+
+func next_level():
+	if current_level == levels.size() - 1:
+		# End of game!
+		print('you win!')
+	else:
+		current_level += 1
+		get_tree().reload_current_scene()
+
+
+# -------------------------------------------------
+# Generic logic
+# -------------------------------------------------
+
+func reset_state():
+	rules_active = []
+	rules_holders = {}
