@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Ground_Tile_Hole.obj-1853a4f1026dae55489290cb23554834.mesh"
+
+[deps]
+
+files=[ "res://.import/Ground_Tile_Hole.obj-1853a4f1026dae55489290cb23554834.mesh" ]
+
+source_file="res://Assets/Ground/Ground_Tile_Hole.obj"
+dest_files=[ "res://.import/Ground_Tile_Hole.obj-1853a4f1026dae55489290cb23554834.mesh", "res://.import/Ground_Tile_Hole.obj-1853a4f1026dae55489290cb23554834.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
