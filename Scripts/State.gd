@@ -9,7 +9,9 @@ enum Rule {
 	NOTHING_BURNS,
 	NOTHING_DROWNS,
 	NOTHING_STINGS,
+	NOTHING_GRABS,
 	NOTHING_FLIES,
+	NOTHING_MATTERS,
 }
 
 const RULES_DATA = {
@@ -30,7 +32,11 @@ const RULES_DATA = {
 var rule_slots = 1
 
 var rules_available = [
-	Rule.NOTHING_FLIES
+	#Rule.NOTHING_BURNS,
+	#Rule.NOTHING_DROWNS,
+	#Rule.NOTHING_STINGS,
+	#Rule.NOTHING_GRABS,
+	#Rule.NOTHING_FLIES,
 ]
 var rules_active = []
 
@@ -49,6 +55,17 @@ func generate_rules_list():
 func set_rule(index, rule):
 	rules_holders[index] = rule
 	generate_rules_list()
+
+func enable_rule(rule):
+	if (
+		rule in rules_available
+		and not rule in rules_active
+	):
+		rules_active.append(rule)
+
+func disable_rule(rule):
+	if rule in rules_active:
+		rules_active.remove(rules_active.find(rule))
 
 
 # -------------------------------------------------
@@ -84,7 +101,7 @@ func next_level():
 	else:
 		current_level += 1
 		reset_state()
-		
+
 		if new_rule != null:
 			get_tree().change_scene('res://Screens/WordFound.tscn')
 		else:

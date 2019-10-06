@@ -2,9 +2,9 @@
 
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player2D.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/ControlDragDropHorizontal.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Skybox.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Skybox.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/ControlKeyboard.tscn" type="PackedScene" id=5]
 
 [node name="Main" type="Spatial"]
 script = ExtResource( 1 )
@@ -19,8 +19,9 @@ motion = Vector3( 7, -2, 0 )
 [node name="Camera" type="Camera" parent="Player2D"]
 transform = Transform( 1, 0, 0, 0, 0.948341, 0.317254, 0, -0.317254, 0.948341, 7, 0.37084, 13 )
 
-[node name="ControlDragDropHorizontal" parent="." instance=ExtResource( 3 )]
+[node name="Skybox" parent="." instance=ExtResource( 3 )]
 
-[node name="Skybox" parent="." instance=ExtResource( 4 )]
+[node name="Background" parent="." instance=ExtResource( 4 )]
 
-[node name="Spatial" parent="." instance=ExtResource( 5 )]
+[node name="ControlKeyboard" parent="." instance=ExtResource( 5 )]
+anchor_top = 0.55
