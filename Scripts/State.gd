@@ -1,5 +1,9 @@
 extends Node
 
+# -------------------------------------------------
+# Rules state and logic
+# -------------------------------------------------
+
 enum Rule {
 	NOTHING_BURNS,
 	NOTHING_DROWNS,
@@ -45,7 +49,21 @@ func set_rule(index, rule):
 	rules_holders[index] = rule
 	generate_rules_list()
 
+
+# -------------------------------------------------
+# Player state and logic
+# -------------------------------------------------
+
 func kill_player():
 	print('player is dead')
 	reset_state()
 	get_tree().reload_current_scene()
+
+# -------------------------------------------------
+# Levels state and logic
+# -------------------------------------------------
+
+const levels = [
+	'res://Levels/TestAdrian.tscn',
+	'res://Levels/LevelHard.tscn',
+]
