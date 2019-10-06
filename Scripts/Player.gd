@@ -1,6 +1,6 @@
-extends RigidBody
+extends KinematicBody
 
-export var velocity: float
+export var motion: Vector3
 
-func _ready():
-	linear_velocity = Vector3(velocity, 0, 0)
+func _physics_process(delta):
+	move_and_collide(delta * motion)
