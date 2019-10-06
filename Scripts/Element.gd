@@ -11,4 +11,5 @@ func _on_body_exited(body):
 
 func _process(delta):
 	if colliding_bodies.size() > 0 and not rule in State.rules_active:
-		State.kill_player()
+		var body = colliding_bodies[0]
+		body.kill()
