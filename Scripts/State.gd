@@ -9,6 +9,7 @@ enum Rule {
 	NOTHING_BURNS,
 	NOTHING_DROWNS,
 	NOTHING_STINGS,
+	NOTHING_FLIES,
 }
 
 const RULES_DATA = {
@@ -21,11 +22,16 @@ const RULES_DATA = {
 	Rule.NOTHING_STINGS: {
 		"word": "stings",
 	},
+	Rule.NOTHING_FLIES: {
+		"word": "flies",
+	},
 }
 
 var rule_slots = 1
 
-var rules_available = []
+var rules_available = [
+	Rule.NOTHING_FLIES
+]
 var rules_active = []
 
 # Proxy to hold content of Nothing... rules.

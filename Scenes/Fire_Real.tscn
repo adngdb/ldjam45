@@ -18,7 +18,7 @@ collision_layer = 2
 script = ExtResource( 1 )
 
 [node name="TriggerZone" type="CollisionShape" parent="."]
-transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0 )
+transform = Transform( 2, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
 shape = SubResource( 1 )
 
 [node name="Fire_FX" parent="." instance=ExtResource( 2 )]
