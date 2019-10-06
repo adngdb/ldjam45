@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Background_Hills.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Background/Background_back.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=3]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 2 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_sky_orientation = Basis( 0.573519, 0, 0.819192, 0, 1, 0, -0.819192, 0, 0.573519 )
+ambient_light_color = Color( 0.643137, 0.286275, 0.286275, 1 )
+fog_enabled = true
+fog_color = Color( 0.501961, 0.6, 0.701961, 1 )
+fog_depth_end = 175.8
+fog_depth_curve = 2.2974
+fog_transmit_curve = 0.420448
+fog_height_enabled = true
+
+[node name="Skybox" type="Spatial"]
+
+[node name="Background_Hills" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.71146, 0, 0, 0, 0.71146, 0, 0, 0, 1, 1.51644, -0.391022, -12.0393 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="Ground" parent="." instance=ExtResource( 3 )]

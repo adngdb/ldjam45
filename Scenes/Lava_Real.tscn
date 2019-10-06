@@ -57,7 +57,7 @@ uniform sampler2D tex_frg_4;uniform sampler2D tex_frg_17;
 
 
 void vertex() {
-// Sortie:0
+// Output:0
 
 }
 
@@ -66,7 +66,7 @@ void fragment() {
 	vec3 n_out7p0;
 	n_out7p0 = vec3(0.000000,-0.100000,0.000000);
 
-// Entrée:11
+// Input:11
 	float n_out11p0;
 	n_out11p0 = TIME;
 
@@ -74,7 +74,7 @@ void fragment() {
 	vec3 n_out15p0;
 	n_out15p0 = n_out7p0 * vec3(n_out11p0);
 
-// Entrée:2
+// Input:2
 	vec3 n_out2p0;
 	n_out2p0 = vec3(UV,0.0);
 
@@ -96,14 +96,14 @@ void fragment() {
 	n_out17p0 = tex_frg_17_read.rgb;
 	n_out17p1 = tex_frg_17_read.a;
 
-// Sortie:0
+// Output:0
 	ALBEDO = n_out4p0;
 	NORMALMAP = n_out17p0;
 
 }
 
 void light() {
-// Sortie:0
+// Output:0
 
 }
 "
@@ -132,11 +132,10 @@ shader = SubResource( 11 )
 [node name="Lava" type="Spatial"]
 
 [node name="Lava" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0232148 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.160074, 0.279014, -0.0153345 )
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )
 material/1 = SubResource( 2 )
 material/2 = SubResource( 12 )
 
 [node name="Ground" parent="." instance=ExtResource( 11 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.864962, 0, -0.108194 )
