@@ -103,11 +103,13 @@ const levels = [
 	'res://Levels/LavaAdvanced.tscn',
 	'res://Levels/LavaExpert.tscn',
 
+	# Introduce Spikes
+	'res://Levels/SpikesSimple.tscn',
+
 	# All Elements
 	'res://Levels/AllElementsHard.tscn',
 
 	#'res://Levels/LavaSimple.tscn',
-	#'res://Levels/SpikesSimple.tscn',
 	#'res://Levels/PlantSimple.tscn',
 	#'res://Levels/ThornsSimple.tscn',
 ]
