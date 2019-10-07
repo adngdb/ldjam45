@@ -5,112 +5,84 @@
 [ext_resource path="res://Scenes/EndLevel.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Elements/Water_Real.tscn" type="PackedScene" id=4]
 
-
-
 [node name="TestAdrian" type="Spatial"]
 
 [node name="Ground" parent="." instance=ExtResource( 1 )]
-collision_layer = 4
 
 [node name="Ground6" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
-collision_layer = 4
 
 [node name="Ground7" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
-collision_layer = 4
 
 [node name="Ground8" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12, 0, 0 )
-collision_layer = 4
 
 [node name="Ground2" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
-collision_layer = 4
 
 [node name="Ground3" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
-collision_layer = 4
 
 [node name="Ground4" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 0 )
-collision_layer = 4
 
 [node name="Ground5" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0 )
-collision_layer = 4
 
 [node name="Ground9" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 0, 0 )
-collision_layer = 4
 
 [node name="Ground18" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0, 0 )
-collision_layer = 4
 
 [node name="Ground11" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 0, 0 )
-collision_layer = 4
 
 [node name="Ground12" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0 )
-collision_layer = 4
 
 [node name="Ground14" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 0 )
-collision_layer = 4
 
 [node name="Ground15" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, 0, 0 )
-collision_layer = 4
 
 [node name="Ground17" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0, 0 )
-collision_layer = 4
 
 [node name="Ground19" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 0 )
-collision_layer = 4
 
 [node name="Ground21" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 0 )
-collision_layer = 4
 
 [node name="Ground22" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 76, 0, 0 )
-collision_layer = 4
 
 [node name="Ground24" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, 0 )
-collision_layer = 4
 
 [node name="Ground25" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, 0 )
-collision_layer = 4
 
 [node name="Ground26" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 92, 0, 0 )
-collision_layer = 4
 
 [node name="Ground27" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 0 )
-collision_layer = 4
 
 [node name="Ground28" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0 )
-collision_layer = 4
 
 [node name="Ground29" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 0, 0 )
-collision_layer = 4
 
 [node name="Ground30" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 104, 0, 0 )
-collision_layer = 4
 
 [node name="Ground31" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108, 0, 0 )
-collision_layer = 4
 
 [node name="Fire_Real" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0 )

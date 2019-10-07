@@ -52,4 +52,4 @@ func _process(delta):
 			else:
 				button.instance.texture = button.disabled
 		else:
-			button.instance.texture = blank_texture
+			button.instance.texture = null
