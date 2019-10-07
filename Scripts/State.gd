@@ -87,17 +87,20 @@ func kill_player():
 
 const levels = [
 	'res://Levels/Empty.tscn',
-	
+
 	# Introduce Fire and Enemies
 	'res://Levels/FireSimple.tscn',
 	'res://Levels/FireEnemy.tscn',
 	'res://Levels/FireEnemies.tscn',
-	
+
 	# Introduce Water
 	'res://Levels/WaterSimple.tscn',
 	'res://Levels/FireWaterSimple.tscn',
 	'res://Levels/FireWaterAdvanced.tscn',
-	
+
+	# All Elements
+	'res://Levels/AllElementsHard.tscn',
+
 	#'res://Levels/LavaSimple.tscn',
 	#'res://Levels/SpikesSimple.tscn',
 	#'res://Levels/PlantSimple.tscn',
