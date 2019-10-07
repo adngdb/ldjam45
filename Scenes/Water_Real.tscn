@@ -135,7 +135,6 @@ material/1 = SubResource( 11 )
 material/2 = SubResource( 11 )
 
 [node name="TriggerZone" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
 shape = SubResource( 12 )
 
 [node name="Floor" type="StaticBody" parent="."]
