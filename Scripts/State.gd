@@ -107,7 +107,7 @@ var current_level = 0
 func next_level():
 	if current_level == levels.size() - 1:
 		# End of game!
-		print('you win!')
+		get_tree().change_scene('res://Screens/YouWin.tscn')
 	else:
 		current_level += 1
 		reset_state()
