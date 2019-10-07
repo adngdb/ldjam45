@@ -25,7 +25,7 @@ const RULES_DATA = {
 		"word": "stings",
 	},
 	Rule.NOTHING_GRABS: {
-		"word": "stings",
+		"word": "grabs",
 	},
 	Rule.NOTHING_FLIES: {
 		"word": "flies",
