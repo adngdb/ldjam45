@@ -18,5 +18,6 @@ ao_texture_channel = 0
 [node name="Ground_Hole" type="Spatial"]
 
 [node name="Ground_Tile_Hole" type="MeshInstance" parent="."]
+transform = Transform( 1.1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )

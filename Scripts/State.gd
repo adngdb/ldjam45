@@ -35,11 +35,11 @@ const RULES_DATA = {
 var rule_slots = 1
 
 var rules_available = [
-	#Rule.NOTHING_BURNS,
-	#Rule.NOTHING_DROWNS,
-	#Rule.NOTHING_STINGS,
-	#Rule.NOTHING_GRABS,
-	#Rule.NOTHING_FLIES,
+	# Rule.NOTHING_BURNS,
+	# Rule.NOTHING_DROWNS,
+	# Rule.NOTHING_STINGS,
+	# Rule.NOTHING_GRABS,
+	# Rule.NOTHING_FLIES,
 ]
 var rules_active = []
 
@@ -97,7 +97,7 @@ const levels = [
 	'res://Levels/WaterSimple.tscn',
 	'res://Levels/FireWaterSimple.tscn',
 	'res://Levels/FireWaterAdvanced.tscn',
-	
+
 	# Introduce Lava
 	'res://Levels/LavaSimple.tscn',
 	'res://Levels/LavaAdvanced.tscn',
@@ -105,6 +105,7 @@ const levels = [
 
 	# Introduce Spikes
 	'res://Levels/SpikesSimple.tscn',
+	'res://Levels/SpikesAdvanced.tscn',
 
 	# All Elements
 	'res://Levels/AllElementsHard.tscn',
