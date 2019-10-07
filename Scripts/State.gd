@@ -110,12 +110,14 @@ const levels = [
 	# Introduce Plant
 	'res://Levels/PlantSimple.tscn',
 	'res://Levels/PlantAdvanced.tscn',
-
+	
+	# Introduce Thorns
+	'res://Levels/ThornsSimple.tscn',
+	'res://Levels/ThornsAdvanced.tscn',
+	
 	# All Elements
-	'res://Levels/AllElementsHard.tscn',
+	# 'res://Levels/AllElementsHard.tscn',
 
-	#'res://Levels/LavaSimple.tscn',
-	#'res://Levels/ThornsSimple.tscn',
 ]
 
 var current_level = 0
