@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/EvilLaugh.wav-1c44f126e4994ec3890f3cde45a64ae3.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/EvilLaugh.wav"
+dest_files=[ "res://.import/EvilLaugh.wav-1c44f126e4994ec3890f3cde45a64ae3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
