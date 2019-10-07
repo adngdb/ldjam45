@@ -30,6 +30,7 @@ func kill():
 
 func stop_movement():
 	is_moving = false
+	$AnimationPlayer.play("Idle")
 
 func _on_animation_finished(anim_name):
 	if anim_name == "Die":
