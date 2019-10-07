@@ -17,7 +17,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3, 0 )
 motion = Vector3( 7, -2, 0 )
 
 [node name="Camera" type="Camera" parent="Player2D"]
-transform = Transform( 1, 0, 0, 0, 0.948341, 0.317254, 0, -0.317254, 0.948341, 7, 0.37084, 13 )
+transform = Transform( 1, 0, 0, 0, 0.948341, 0.317254, 0, -0.317254, 0.948341, 7, 2.37084, 13 )
 
 [node name="Skybox" parent="." instance=ExtResource( 3 )]
 
