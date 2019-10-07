@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Assets/Lava/Lava.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Lava/Cauldron_Base_Color.png" type="Texture" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Assets/Lava/Lava_Normal.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Lava/Lava_BaseColor.png" type="Texture" id=10]
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Fire_Real.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Water_Real.tscn" type="PackedScene" id=13]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -141,3 +143,61 @@ material/1 = SubResource( 2 )
 material/2 = SubResource( 12 )
 
 [node name="Ground" parent="." instance=ExtResource( 11 )]
+editor/display_folded = true
+collision_layer = 4
+collision_mask = 17
+
+[node name="CollisionShape" parent="Ground" index="1"]
+disabled = true
+
+[node name="Fire_Real" parent="." instance=ExtResource( 12 )]
+
+[node name="Fire_FX" parent="Fire_Real" index="1"]
+visible = false
+
+[node name="Fire_FX4" parent="Fire_Real" index="2"]
+visible = false
+
+[node name="Fire_FX5" parent="Fire_Real" index="3"]
+visible = false
+
+[node name="Fire_FX6" parent="Fire_Real" index="4"]
+visible = false
+
+[node name="Fire_FX7" parent="Fire_Real" index="5"]
+visible = false
+
+[node name="Fire_FX3" parent="Fire_Real" index="6"]
+visible = false
+
+[node name="Fire_FX2" parent="Fire_Real" index="7"]
+visible = false
+
+[node name="Pumpkin_Fire" parent="Fire_Real" index="8"]
+visible = false
+
+[node name="Pumpkin_Fire2" parent="Fire_Real" index="9"]
+visible = false
+
+[node name="Pumpkin_Fire3" parent="Fire_Real" index="10"]
+visible = false
+
+[node name="Ground" parent="Fire_Real" index="11"]
+editor/display_folded = true
+visible = false
+
+[node name="CollisionShape" parent="Fire_Real/Ground" index="1"]
+disabled = true
+
+[node name="Water_Real" parent="." instance=ExtResource( 13 )]
+
+[node name="WaterFall" parent="Water_Real" index="0"]
+visible = false
+
+[editable path="Ground"]
+
+[editable path="Fire_Real"]
+
+[editable path="Fire_Real/Ground"]
+
+[editable path="Water_Real"]
