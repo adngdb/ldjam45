@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Sounds/Success.wav" type="AudioStream" id=1]
+
+[node name="SuccessSound" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )

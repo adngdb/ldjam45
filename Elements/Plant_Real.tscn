@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/Element.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Plant/CarnivorPlant.obj" type="ArrayMesh" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/Plant/Vines_Mixed_AO.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Plant/Vines_Roughness.png" type="Texture" id=8]
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Assets/Sounds/Plant.wav" type="AudioStream" id=10]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 3 )
@@ -63,5 +64,8 @@ shape = SubResource( 3 )
 
 [node name="Ground" parent="." instance=ExtResource( 9 )]
 editor/display_folded = true
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

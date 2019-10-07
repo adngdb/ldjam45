@@ -3,7 +3,6 @@ extends Spatial
 func _ready():
 	update_level()
 
-
 func _process(delta):
 	# Burns
 	if Input.is_action_pressed("nothing_burns"):
@@ -25,7 +24,7 @@ func _process(delta):
 
 	if Input.is_action_just_released("nothing_stings"):
 		State.disable_rule(State.Rule.NOTHING_STINGS)
-		
+
 	# Grabs
 	if Input.is_action_pressed("nothing_grabs"):
 		State.enable_rule(State.Rule.NOTHING_GRABS)

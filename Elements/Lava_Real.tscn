@@ -189,6 +189,7 @@ visible = false
 disabled = true
 
 [node name="Water_Real" parent="." instance=ExtResource( 13 )]
+editor/display_folded = true
 
 [node name="WaterFall" parent="Water_Real" index="0"]
 visible = false

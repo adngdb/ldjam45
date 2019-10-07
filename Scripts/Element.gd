@@ -8,8 +8,14 @@ func _on_body_entered(body):
 
 func _on_body_exited(body):
 	colliding_bodies.remove(colliding_bodies.find(body))
+	if body.is_alive:
+		body.reset_health()
+		SuccessSound.play()
 
 func _process(delta):
 	if colliding_bodies.size() > 0 and not rule in State.rules_active:
 		var body = colliding_bodies[0]
-		body.kill()
+		if body.is_alive:
+			body.hurt()
+			if not body.is_alive and $DeathSound:
+				$DeathSound.play()
