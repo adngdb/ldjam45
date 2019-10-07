@@ -97,6 +97,11 @@ const levels = [
 	'res://Levels/WaterSimple.tscn',
 	'res://Levels/FireWaterSimple.tscn',
 	'res://Levels/FireWaterAdvanced.tscn',
+	
+	# Introduce Lava
+	'res://Levels/LavaSimple.tscn',
+	'res://Levels/LavaAdvanced.tscn',
+	'res://Levels/LavaExpert.tscn',
 
 	# All Elements
 	'res://Levels/AllElementsHard.tscn',
