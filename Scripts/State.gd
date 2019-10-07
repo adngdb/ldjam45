@@ -89,7 +89,6 @@ const levels = [
 	'res://Levels/FireWaterSimple.tscn',
 	'res://Levels/FireWaterAdvanced.tscn',
 	'res://Levels/FireWaterExpert.tscn',
-	'res://Levels/LevelHard.tscn',
 ]
 
 var current_level = 0

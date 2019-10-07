@@ -11,4 +11,4 @@ func _ready():
 
 func on_timeout():
 	State.new_rule = null
-	get_tree().change_scene('res://Scenes/Main.tscn')
+	get_tree().change_scene('res://Screens/Main.tscn')

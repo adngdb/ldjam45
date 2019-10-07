@@ -25,7 +25,7 @@ colors = PoolColorArray( 0.792157, 1, 0, 0, 0.823352, 0.471612, 0.00803591, 1, 1
 [node name="Fire_FX" type="Spatial"]
 
 [node name="Flame" type="CPUParticles" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0.196429, -0.0684363, 0.172962 )
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.196429, -0.0684363, 0.172962 )
 material_override = SubResource( 1 )
 amount = 10
 lifetime = 0.5
