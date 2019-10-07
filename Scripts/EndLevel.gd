@@ -11,6 +11,7 @@ func _ready():
 	add_child(timer)
 
 func _on_EndLevel_body_entered(body):
+	$AnimationPlayer.play("Collect")
 	$AudioStreamPlayer.play()
 	timer.start()
 	body.stop_movement()
