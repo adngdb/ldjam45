@@ -32,8 +32,8 @@ const RULES_DATA = {
 var rule_slots = 1
 
 var rules_available = [
-	Rule.NOTHING_BURNS,
-	Rule.NOTHING_DROWNS,
+	#Rule.NOTHING_BURNS,
+	#Rule.NOTHING_DROWNS,
 	#Rule.NOTHING_STINGS,
 	#Rule.NOTHING_GRABS,
 	#Rule.NOTHING_FLIES,
@@ -83,7 +83,7 @@ func kill_player():
 # -------------------------------------------------
 
 const levels = [
-	'res://Levels/LavaSimple.tscn',
+	#'res://Levels/SpikesSimple.tscn',
 	'res://Levels/Empty.tscn',
 	'res://Levels/FireSimple.tscn',
 	'res://Levels/FireAdvanced.tscn',
