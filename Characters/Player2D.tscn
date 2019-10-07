@@ -2,6 +2,7 @@
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/PlayerSpriteSheet.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sounds/Girl_Scream.wav" type="AudioStream" id=3]
 
 [sub_resource type="Animation" id=1]
 length = 2.24
@@ -160,4 +161,7 @@ region_rect = Rect2( 0, 0, 2048, 2048 )
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0, 0, 0 )
 shape = SubResource( 4 )
+
+[node name="KillSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]

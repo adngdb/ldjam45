@@ -21,12 +21,15 @@ func reset_health():
 func hurt(delta):
 	hitpoints -= delta
 	if hitpoints <= 0:
-		kill()
+		kill(true)
 
-func kill():
+func kill(by_element = false):
 	is_alive = false
 	$AnimationPlayer.play("Die")
 	$CollisionShape.disabled = true
+
+	if not by_element:
+		$KillSound.play()
 
 func stop_movement():
 	is_moving = false
