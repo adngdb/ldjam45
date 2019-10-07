@@ -8,7 +8,6 @@ var is_moving = true
 var is_alive = true
 
 func _ready():
-	print(hitpoints)
 	initialHitPoints = hitpoints
 	$AnimationPlayer.play("Run")
 
@@ -18,16 +17,16 @@ func _physics_process(delta):
 
 func reset_health():
 	hitpoints = initialHitPoints
-	print('HP reset to %s' % hitpoints)
 
 func hurt(delta):
-	print(delta)
 	hitpoints -= delta
-	print('hurts! HP left: %s' % hitpoints)
 	if hitpoints <= 0:
-		is_alive = false
-		$AnimationPlayer.play("Die")
-		$CollisionShape.disabled = true
+		kill()
+
+func kill():
+	is_alive = false
+	$AnimationPlayer.play("Die")
+	$CollisionShape.disabled = true
 
 func stop_movement():
 	is_moving = false

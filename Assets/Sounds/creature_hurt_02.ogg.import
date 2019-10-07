@@ -11,5 +11,5 @@ dest_files=[ "res://.import/creature_hurt_02.ogg-3adc458fdf028ba287276baa3529b09
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

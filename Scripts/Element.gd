@@ -9,7 +9,7 @@ func _on_body_entered(body):
 
 func _on_body_exited(body):
 	colliding_bodies.remove(colliding_bodies.find(body))
-	if body.is_alive:
+	if body.is_in_group('Player') and body.is_alive:
 		body.reset_health()
 		SuccessSound.play()
 
@@ -20,9 +20,12 @@ func _process(delta):
 	else:
 		if light:
 			light.visible = true
-		if colliding_bodies.size() > 0:
-			var body = colliding_bodies[0]
-			if body.is_alive:
+
+		for body in colliding_bodies:
+			if body.is_in_group('Enemies'):
+				body.kill()
+
+			if body.is_in_group('Player') and body.is_alive:
 				body.hurt(delta)
 				if not body.is_alive and $DeathSound:
 					$DeathSound.play()
