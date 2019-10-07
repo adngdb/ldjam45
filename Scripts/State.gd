@@ -88,6 +88,7 @@ const levels = [
 	'res://Levels/LavaSimple.tscn',
 	'res://Levels/SpikesSimple.tscn',
 	'res://Levels/PlantSimple.tscn',
+	'res://Levels/ThornsSimple.tscn',
 	
 	'res://Levels/Empty.tscn',
 	'res://Levels/FireSimple.tscn',

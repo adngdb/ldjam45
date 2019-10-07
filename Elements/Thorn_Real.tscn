@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/Thorn/Phorn.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Thorn/Thorn_Base_Color.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Thorn/Phorn_Mixed_AO.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Elements/Plant_Real.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Elements/Spikes_Real.tscn" type="PackedScene" id=6]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -14,16 +16,39 @@ ao_texture = ExtResource( 3 )
 ao_on_uv2 = false
 ao_texture_channel = 0
 
-[node name="Thorn" type="Spatial"]
+[node name="Thorns" type="Spatial"]
 
-[node name="Thorn" type="MeshInstance" parent="."]
+[node name="Model" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Thorn" type="MeshInstance" parent="Model"]
 transform = Transform( 0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -0.986309, 1.20357, 0 )
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )
 
-[node name="Thorn2" type="MeshInstance" parent="."]
+[node name="Thorn2" type="MeshInstance" parent="Model"]
 transform = Transform( 0.185712, 0, 0.778146, 0, 0.8, 0, -0.778146, 0, 0.185712, 0.598717, 1.23625, 0 )
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )
 
 [node name="Ground" parent="." instance=ExtResource( 4 )]
+
+[node name="Plante" parent="." instance=ExtResource( 5 )]
+
+[node name="Model" parent="Plante" index="0"]
+visible = false
+
+[node name="Ground" parent="Plante" index="2"]
+visible = false
+
+[node name="Spikes" parent="." instance=ExtResource( 6 )]
+
+[node name="Picks" parent="Spikes" index="0"]
+visible = false
+
+[node name="TriggerZone" parent="Spikes" index="1"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.120669, 1.5327, 0 )
+
+[editable path="Plante"]
+
+[editable path="Spikes"]

@@ -14,8 +14,6 @@
 [ext_resource path="res://Elements/Fire_Real.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Elements/Water_Real.tscn" type="PackedScene" id=13]
 
-
-
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
 metallic_texture = ExtResource( 3 )
@@ -146,13 +144,12 @@ material/2 = SubResource( 12 )
 
 [node name="Ground" parent="." instance=ExtResource( 11 )]
 editor/display_folded = true
-collision_layer = 4
-collision_mask = 17
 
 [node name="CollisionShape" parent="Ground" index="1"]
 disabled = true
 
 [node name="Fire_Real" parent="." instance=ExtResource( 12 )]
+editor/display_folded = true
 
 [node name="Fire_FX" parent="Fire_Real" index="1"]
 visible = false
