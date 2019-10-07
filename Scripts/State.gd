@@ -107,11 +107,14 @@ const levels = [
 	'res://Levels/SpikesSimple.tscn',
 	'res://Levels/SpikesAdvanced.tscn',
 
+	# Introduce Plant
+	'res://Levels/PlantSimple.tscn',
+	'res://Levels/PlantAdvanced.tscn',
+
 	# All Elements
 	'res://Levels/AllElementsHard.tscn',
 
 	#'res://Levels/LavaSimple.tscn',
-	#'res://Levels/PlantSimple.tscn',
 	#'res://Levels/ThornsSimple.tscn',
 ]
 
