@@ -6,31 +6,31 @@
 [ext_resource path="res://Assets/Ground/Ground_BaseColor.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Ground/Ground_Roughness.png" type="Texture" id=5]
 
-[sub_resource type="VisualShaderNodeInput" id=1]
+[sub_resource type="VisualShaderNodeInput" id=3]
 input_name = "time"
 
-[sub_resource type="VisualShaderNodeTransformVecMult" id=2]
+[sub_resource type="VisualShaderNodeTransformVecMult" id=4]
 
-[sub_resource type="VisualShaderNodeVectorOp" id=3]
+[sub_resource type="VisualShaderNodeVectorOp" id=5]
 operator = 2
 
-[sub_resource type="VisualShaderNodeVectorOp" id=4]
+[sub_resource type="VisualShaderNodeVectorOp" id=6]
 
-[sub_resource type="VisualShaderNodeColorConstant" id=5]
+[sub_resource type="VisualShaderNodeColorConstant" id=7]
 constant = Color( 0.0849609, 0.0849609, 0.0849609, 1 )
 
-[sub_resource type="VisualShaderNodeInput" id=6]
+[sub_resource type="VisualShaderNodeInput" id=8]
 output_port_for_preview = 0
 input_name = "uv"
 
-[sub_resource type="VisualShaderNodeTexture" id=7]
+[sub_resource type="VisualShaderNodeTexture" id=9]
 texture = ExtResource( 3 )
 
-[sub_resource type="VisualShaderNodeVec3Constant" id=8]
+[sub_resource type="VisualShaderNodeVec3Constant" id=10]
 output_port_for_preview = 0
 constant = Vector3( 0, -0.1, 0 )
 
-[sub_resource type="VisualShader" id=9]
+[sub_resource type="VisualShader" id=11]
 code = "shader_type spatial;
 uniform sampler2D tex_frg_4;
 
@@ -87,28 +87,28 @@ void light() {
 "
 graph_offset = Vector2( -414, 98 )
 nodes/fragment/0/position = Vector2( 380, 340 )
-nodes/fragment/2/node = SubResource( 6 )
+nodes/fragment/2/node = SubResource( 8 )
 nodes/fragment/2/position = Vector2( -1180, 200 )
-nodes/fragment/4/node = SubResource( 7 )
+nodes/fragment/4/node = SubResource( 9 )
 nodes/fragment/4/position = Vector2( -140, -40 )
-nodes/fragment/7/node = SubResource( 8 )
+nodes/fragment/7/node = SubResource( 10 )
 nodes/fragment/7/position = Vector2( -1120, -500 )
-nodes/fragment/11/node = SubResource( 1 )
+nodes/fragment/11/node = SubResource( 3 )
 nodes/fragment/11/position = Vector2( -1260, 0 )
-nodes/fragment/14/node = SubResource( 2 )
+nodes/fragment/14/node = SubResource( 4 )
 nodes/fragment/14/position = Vector2( 80, -380 )
-nodes/fragment/15/node = SubResource( 3 )
+nodes/fragment/15/node = SubResource( 5 )
 nodes/fragment/15/position = Vector2( -680, -360 )
-nodes/fragment/16/node = SubResource( 4 )
+nodes/fragment/16/node = SubResource( 6 )
 nodes/fragment/16/position = Vector2( -620, 320 )
-nodes/fragment/18/node = SubResource( 5 )
+nodes/fragment/18/node = SubResource( 7 )
 nodes/fragment/18/position = Vector2( -140, 580 )
 nodes/fragment/connections = PoolIntArray( 4, 0, 0, 0, 7, 0, 15, 0, 11, 0, 15, 1, 15, 0, 16, 0, 2, 0, 16, 1, 16, 0, 4, 0, 18, 0, 0, 3 )
 
-[sub_resource type="ShaderMaterial" id=10]
-shader = SubResource( 9 )
+[sub_resource type="ShaderMaterial" id=12]
+shader = SubResource( 11 )
 
-[sub_resource type="SpatialMaterial" id=11]
+[sub_resource type="SpatialMaterial" id=13]
 albedo_texture = ExtResource( 4 )
 roughness_texture = ExtResource( 5 )
 ao_enabled = true
@@ -116,11 +116,11 @@ ao_light_affect = 0.0
 ao_on_uv2 = false
 ao_texture_channel = 0
 
-[sub_resource type="BoxShape" id=12]
+[sub_resource type="BoxShape" id=2]
 margin = 0.001
 extents = Vector3( 2, 1, 1 )
 
-[sub_resource type="BoxShape" id=13]
+[sub_resource type="BoxShape" id=14]
 extents = Vector3( 2.2, 1.5, 1 )
 
 [node name="Water_Real" type="Area"]
@@ -130,17 +130,17 @@ rule = 1
 
 [node name="WaterFall" type="MeshInstance" parent="."]
 mesh = ExtResource( 2 )
-material/0 = SubResource( 10 )
-material/1 = SubResource( 11 )
-material/2 = SubResource( 11 )
+material/0 = SubResource( 12 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
 
 [node name="TriggerZone" type="CollisionShape" parent="."]
-shape = SubResource( 12 )
+shape = SubResource( 2 )
 
 [node name="Floor" type="StaticBody" parent="."]
 collision_layer = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Floor"]
-shape = SubResource( 13 )
+shape = SubResource( 14 )
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
