@@ -1,13 +1,14 @@
 extends KinematicBody
 
 export var motion: Vector3
-export var hitpoints: int
-var initialHitPoints: int
+export var hitpoints: float
+var initialHitPoints: float
 
 var is_moving = true
 var is_alive = true
 
 func _ready():
+	print(hitpoints)
 	initialHitPoints = hitpoints
 	$AnimationPlayer.play("Run")
 
@@ -17,9 +18,12 @@ func _physics_process(delta):
 
 func reset_health():
 	hitpoints = initialHitPoints
+	print('HP reset to %s' % hitpoints)
 
-func hurt():
-	hitpoints -= 1
+func hurt(delta):
+	print(delta)
+	hitpoints -= delta
+	print('hurts! HP left: %s' % hitpoints)
 	if hitpoints <= 0:
 		is_alive = false
 		$AnimationPlayer.play("Die")

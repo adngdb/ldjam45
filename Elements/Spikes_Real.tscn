@@ -34,7 +34,7 @@ material/0 = SubResource( 1 )
 [node name="Ground_Hole" parent="Picks" instance=ExtResource( 4 )]
 
 [node name="TriggerZone" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.120669, 0.257168, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.120669, 0.79967, 0 )
 shape = SubResource( 2 )
 
 [node name="Floor" type="StaticBody" parent="."]

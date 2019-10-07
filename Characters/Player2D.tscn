@@ -86,8 +86,8 @@ extents = Vector3( 0.506346, 1, 1.21177 )
 ]]
 collision_mask = 6
 script = ExtResource( 1 )
-motion = Vector3( 5, -2, 0 )
-hitpoints = 15
+motion = Vector3( 5, -5, 0 )
+hitpoints = 0.3
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 playback_speed = 2.0

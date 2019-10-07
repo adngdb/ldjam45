@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/Lava/Lava.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Assets/Lava/Cauldron_Base_Color.png" type="Texture" id=2]
@@ -11,8 +11,9 @@
 [ext_resource path="res://Assets/Lava/Lava_Normal.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Lava/Lava_BaseColor.png" type="Texture" id=10]
 [ext_resource path="res://Scenes/Ground.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Elements/Fire_Real.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Elements/Water_Real.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Elements/Water_Real.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/Sounds/Lava.wav" type="AudioStream" id=13]
+[ext_resource path="res://Elements/Fire_Real.tscn" type="PackedScene" id=14]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
@@ -148,8 +149,15 @@ editor/display_folded = true
 [node name="CollisionShape" parent="Ground" index="1"]
 disabled = true
 
-[node name="Fire_Real" parent="." instance=ExtResource( 12 )]
-editor/display_folded = true
+[node name="Water_Real" parent="." instance=ExtResource( 12 )]
+
+[node name="WaterFall" parent="Water_Real" index="0"]
+visible = false
+
+[node name="DeathSound" parent="Water_Real" index="3"]
+stream = ExtResource( 13 )
+
+[node name="Fire_Real" parent="." instance=ExtResource( 14 )]
 
 [node name="Fire_FX" parent="Fire_Real" index="1"]
 visible = false
@@ -188,16 +196,13 @@ visible = false
 [node name="CollisionShape" parent="Fire_Real/Ground" index="1"]
 disabled = true
 
-[node name="Water_Real" parent="." instance=ExtResource( 13 )]
-editor/display_folded = true
-
-[node name="WaterFall" parent="Water_Real" index="0"]
-visible = false
+[node name="DeathSound" parent="Fire_Real" index="12"]
+stream = ExtResource( 13 )
 
 [editable path="Ground"]
+
+[editable path="Water_Real"]
 
 [editable path="Fire_Real"]
 
 [editable path="Fire_Real/Ground"]
-
-[editable path="Water_Real"]

@@ -16,6 +16,6 @@ func _process(delta):
 	if colliding_bodies.size() > 0 and not rule in State.rules_active:
 		var body = colliding_bodies[0]
 		if body.is_alive:
-			body.hurt()
+			body.hurt(delta)
 			if not body.is_alive and $DeathSound:
 				$DeathSound.play()
