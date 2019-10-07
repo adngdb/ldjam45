@@ -99,7 +99,6 @@ transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0 )
 texture = ExtResource( 2 )
 vframes = 4
 hframes = 4
-frame = 12
 region_enabled = true
 region_rect = Rect2( 0, 0, 2048, 2048 )
 

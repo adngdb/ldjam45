@@ -21,6 +21,7 @@ run/main_scene="res://Screens/Title.tscn"
 [autoload]
 
 State="*res://Scripts/State.gd"
+MusicPlayer="*res://Scenes/MusicPlayer.tscn"
 
 [input]
 
