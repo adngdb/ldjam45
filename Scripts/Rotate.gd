@@ -1,4 +1,4 @@
-extends MeshInstance
+extends Spatial
 
 func _process(delta):
-	rotation_degrees.y += 1
+	rotation_degrees.y -= 1

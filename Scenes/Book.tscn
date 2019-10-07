@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Rotate.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Book/Books.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Assets/Book/Books_Book_BaseColor.png" type="Texture" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 3 )
+
+[node name="Book" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Books" type="MeshInstance" parent="."]
+transform = Transform( 2.79197, -0.746748, 1.06647, 1.30192, 1.60141, -2.28705, 0, 2.52348, 1.76696, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = SubResource( 1 )
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 2.55364, 0 )
+light_energy = 2.0
+spot_range = 4.47625
+spot_angle = 30.0131
