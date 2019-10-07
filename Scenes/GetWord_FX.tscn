@@ -32,7 +32,7 @@ albedo_texture = ExtResource( 2 )
 [node name="GetWord" type="Spatial"]
 
 [node name="FlameBlue" type="CPUParticles" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+transform = Transform( 1.365, 0, 0, 0, -5.96661e-008, 1.365, 0, -1.365, -5.96661e-008, 0, 0, 0 )
 material_override = SubResource( 1 )
 amount = 10
 lifetime = 0.5
@@ -51,7 +51,7 @@ scale_amount_curve = SubResource( 3 )
 color_ramp = SubResource( 4 )
 
 [node name="Books2" type="CPUParticles" parent="."]
-transform = Transform( 0.4216, -0.624682, 0.657286, -0.671379, 0.272185, 0.689323, -0.609511, -0.731907, -0.304645, 0.0932626, 0.739144, 0.0491925 )
+transform = Transform( 0.82212, -1.21813, 1.28171, -1.30919, 0.530761, 1.34418, -1.18855, -1.42722, -0.594058, 0.0932626, 1.73914, 0.0491925 )
 material_override = SubResource( 5 )
 amount = 1
 lifetime = 50.0
@@ -61,3 +61,9 @@ gravity = Vector3( 0, 0, 0 )
 initial_velocity = 0.01
 angle = 2.0
 scale_amount = 1.5
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 3, 0 )
+light_energy = 2.0
+spot_range = 3.83073
+spot_angle = 26.5474
