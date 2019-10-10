@@ -35,29 +35,20 @@ margin_right = 1004.0
 margin_bottom = 580.0
 custom_constants/vseparation = 20
 custom_constants/hseparation = 20
-columns = 3
+columns = 2
 script = ExtResource( 1 )
 
-[node name="NothingBurns" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
-margin_right = 314.0
-margin_bottom = 100.0
-rect_min_size = Vector2( 100, 100 )
-size_flags_horizontal = 3
-expand = true
-stretch_mode = 1
-
 [node name="NothingDrowns" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
-margin_left = 334.0
-margin_right = 648.0
+margin_right = 482.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 3
 expand = true
 stretch_mode = 1
 
-[node name="NothingStings" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
-margin_left = 668.0
-margin_right = 982.0
+[node name="NothingBurns" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
+margin_left = 502.0
+margin_right = 984.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 3
@@ -66,7 +57,17 @@ stretch_mode = 1
 
 [node name="NothingGrabs" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
 margin_top = 120.0
-margin_right = 314.0
+margin_right = 482.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+expand = true
+stretch_mode = 1
+
+[node name="NothingStings" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
+margin_left = 502.0
+margin_top = 120.0
+margin_right = 984.0
 margin_bottom = 220.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 3
@@ -74,6 +75,7 @@ expand = true
 stretch_mode = 1
 
 [node name="NothingFlies" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
+visible = false
 margin_left = 334.0
 margin_top = 120.0
 margin_right = 648.0
@@ -84,9 +86,10 @@ expand = true
 stretch_mode = 1
 
 [node name="NothingMatters" type="TextureRect" parent="MarginContainer/NothingButtonsHolder"]
-margin_left = 668.0
+visible = false
+margin_left = 334.0
 margin_top = 120.0
-margin_right = 982.0
+margin_right = 648.0
 margin_bottom = 220.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 3
